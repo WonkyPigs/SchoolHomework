@@ -3,7 +3,7 @@
 }
 html{
     box-sizing:border-box;
-    -ms-overflow-style:scrollbar
+    -ms-overflow-style:scrollbar /* MADE BY HARSHIT MITTAL OF X-D */
 }
 *,::after,::before{
     box-sizing:inherit
@@ -27,6 +27,7 @@ p {
 	padding: 0;
 }
 
+/* MADE BY HARSHIT MITTAL OF X-D */
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
@@ -83,6 +84,8 @@ a:hover {
   display: none;
 }
 
+
+/* MADE BY HARSHIT MITTAL OF X-D */
 @media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -161,7 +164,7 @@ a:hover {
 	margin: 50px;
 	text-align: center;
 	padding-top: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 10px; /* MADE BY HARSHIT MITTAL OF X-D */
 }
 
 #about h1 {
@@ -206,6 +209,7 @@ a:hover {
 	color: white;
 }
 
+/* MADE BY HARSHIT MITTAL OF X-D */
 #banner1 h2 {
 	margin-top: 5px;
 	font-size: 20px;
@@ -235,6 +239,7 @@ footer {
 	color: white;
 }
 
+/* MADE BY HARSHIT MITTAL OF X-D */
 .footer {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -283,7 +288,7 @@ footer {
 }
 
 #regions hr {
-	border: .1px solid #00000090;
+	border: .1px solid #00000090; /* MADE BY HARSHIT MITTAL OF X-D */
 }
 
 #region-examples img {
@@ -342,7 +347,7 @@ footer {
 	clip-path: 
 		polygon(
 		var(--d) 0%, 
-		var(--d) 0%, 
+		var(--d) 0%, /* MADE BY HARSHIT MITTAL OF X-D */
 		100% 0%, 
 		100% calc(100% - var(--d)),
 		100% calc(100% - var(--d)),
@@ -374,7 +379,7 @@ footer {
 	--_s: calc(var(--d) + var(--b));
 	color: #0000;
 	text-shadow: 
-		0 calc(-1*var(--_t,0em)) var(--c), 
+		0 calc(-1*var(--_t,0em)) var(--c),  /* MADE BY HARSHIT MITTAL OF X-D */
 		0 calc(var(--h) - var(--_t,0em)) #fff;
 	border: solid #0000;
 	overflow: hidden;
@@ -436,3 +441,6 @@ footer {
 	left: 50%;
 	transform: translate(-50%, -50%);
   }
+
+
+/* MADE BY HARSHIT MITTAL OF X-D */
