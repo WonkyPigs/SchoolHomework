@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>North India</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/js/bootstrap/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/north_india_main.jpg">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+        <div class="max-width">
+            <a href="/index.html">Home</a>
+            <a href="/regions/south.html">South India</a>
+            <a href="/regions/east.html">East India</a>
+            <a href="/regions/west.html">West India</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+	<section id="region-head">
+		<h1>North Indian Architecture</h1>
+		<h2>North Indian architecture encompasses Indo-Islamic, Mughal, and Rajput styles.</h2>
+	</section>
+	<!-- Header -->
+
+    <!-- Example Architecture Section -->
+	<section id="region-examples" class="container">
+		<br>
+        <section id="ex1" class="container">
+            <div class="row fixed-width">
+                <div class="col-md mode">
+                    <h2>The Taj Mahal</h2>
+                    <br>
+                    <p>The Taj Mahal is an iconic masterpiece of Mughal architecture located in Agra, India. 
+                        Constructed by Emperor Shah Jahan in the 17th century, it was dedicated to his beloved wife, Mumtaz Mahal. 
+                        The Taj Mahal is renowned for its exquisite white marble craftsmanship, intricate floral patterns, and delicate inlay work of semi-precious stones. 
+                        Its symmetrical design features a central dome flanked by four minarets, reflecting in a serene pool. 
+                        Recognized as a UNESCO World Heritage site, the Taj Mahal stands as a symbol of eternal love and architectural grandeur.
+                    </p>
+                </div>
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/north/taj-mahal.webp" alt="TAJ MAHAL">
+                </div>	
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="ex2" class="container">
+            <div class="row fixed-width">
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/north/qutub-minar.avif" alt="QUTUB MINAR">
+                </div>
+                <div class="col-md mode">
+                    <h2>The Qutub Minar</h2>
+                    <br>
+                    <p>The Qutub Minar is a remarkable monument located in Delhi, India. 
+                        Standing at a height of around 73 meters (240 feet), it is the world's tallest brick minaret. 
+                        Built in the 12th century, it is an exquisite example of Indo-Islamic architecture and is part of the Qutub complex, a UNESCO World Heritage site. 
+                        The minar is adorned with intricate carvings, verses from the Quran, and decorative balconies. 
+                        Its construction was initiated by Qutb-ud-din Aibak and completed by Iltutmish, showcasing the influence of the Delhi Sultanate. 
+                        The Qutub Minar stands as a testament to India's rich cultural heritage and architectural prowess.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="ex3" class="container">
+            <div class="row fixed-width">
+                <div class="col-md mode">
+                    <h2>The India Gate</h2>
+                    <br>
+                    <p>India Gate is a prominent monument located in the heart of New Delhi, India. 
+                        It is a war memorial built in memory of Indian soldiers who lost their lives during World War I and the Afghan Wars. 
+                        Designed by Sir Edwin Lutyens, it stands as a symbol of national pride and sacrifice. 
+                        The monument features an imposing archway made of red sandstone, adorned with inscriptions and the names of soldiers. 
+                        Surrounded by lush green lawns, it serves as a popular gathering place and a tribute to the bravery of Indian soldiers. 
+                        India Gate is an iconic landmark that holds great historical and patriotic significance for the country.
+                    </p>
+                </div>
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/north/india-gate.jpg" alt="INDIA GATE">
+                </div>
+            </div>
+        </section>
+        <br>
+    </section>
+    <!-- End Example Architecture Section -->
+
+    <!-- Footer -->
+	<section id="footer">
+		<footer>
+			<div class="footer">
+				<div class="footer-text">
+					<p><i class="fa-regular fa-copyright"></i> Made by Harshit Mittal of Class X-D</p>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!-- End Footer -->
+
+    <!-- font awesome code -->
+    <script src="https://kit.fontawesome.com/59181c9d24.js" crossorigin="anonymous"></script>
+
+    <!-- Navbar Dropdown Script -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- End Navbar Dropdown Script -->
+
+    <!-- Smooth Scrolling Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 100, function(){
+
+                window.location.hash = hash;
+                });
+            }
+            });
+        });
+    </script>
+    <!-- End Smooth Scrolling Script -->
+
+    <!-- Vanta js script -->
+    <script src="/js/bootstrap/p5.min.js"></script>
+    <script src="/js/bootstrap/vanta.topology.min.js"></script>
+    <script>
+        VANTA.TOPOLOGY({
+        el: "#region-head",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x7f9017
+        })
+    </script>
+    <!-- End Vanta js script -->
+</body>
+</html>

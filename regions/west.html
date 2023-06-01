@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>West India</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/js/bootstrap/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/west_india_main.jpg">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+        <div class="max-width">
+            <a href="/index.html">Home</a>
+            <a href="/regions/north.html">North India</a>
+            <a href="/regions/south.html">South India</a>
+            <a href="/regions/east.html">East India</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+	<section id="region-head">
+		<h1>West Indian Architecture</h1>
+		<h2>West Indian architecture is characterized by a fusion of diverse influences and a vibrant, colorful aesthetic.</h2>
+	</section>
+	<!-- Header -->
+
+    <!-- Example Architecture Section -->
+	<section id="region-examples" class="container">
+		<br>
+        <section id="ex1" class="container">
+            <div class="row fixed-width">
+                <div class="col-md mode">
+                    <h2>Rani Ki Vav</h2>
+                    <br>
+                    <p>Rani ki Vav, also known as the Queen's Stepwell, is a stunning archaeological site located in Patan, Gujarat, India. 
+                        Built in the 11th century, it was commissioned by Queen Udayamati as a memorial to her husband, King Bhimdev I of the Solanki dynasty. 
+                        Rani ki Vav is renowned for its intricate stepwell architecture, featuring a series of elaborately carved pillars, walls, and staircases adorned with sculptures and detailed reliefs depicting various deities, mythological scenes, and celestial beings. 
+                        The stepwell's symmetrical design and artistic splendor make it a UNESCO World Heritage site and a remarkable testament to the rich cultural heritage of Gujarat.
+                    </p>
+                </div>
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/west/rani-ki-vav.jpg" alt="RANI KI VAV">
+                </div>	
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="ex2" class="container">
+            <div class="row fixed-width">
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/west/ellora-caves.jpg" alt="ELLORA CAVES">
+                </div>
+                <div class="col-md mode">
+                    <h2>The Ellora Caves</h2>
+                    <br>
+                    <p>
+                        The Ellora Caves are an extraordinary UNESCO World Heritage site located in Aurangabad, Maharashtra, India. 
+                        The caves represent a monumental feat of ancient rock-cut architecture, dating back to the 6th to 8th centuries.
+                        The site comprises a total of 34 caves carved into the Charanandri Hills, featuring a fusion of Buddhist, Hindu, and Jain religious art. 
+                        The caves showcase intricate sculptures, impressive facades, and beautifully carved rock-cut temples, depicting various deities, mythological narratives, and spiritual teachings. 
+                        Ellora Caves stand as a testament to India's rich artistic and cultural heritage and serve as a significant pilgrimage site for devotees and a marvel for art enthusiasts from around the world.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="ex3" class="container">
+            <div class="row fixed-width">
+                <div class="col-md mode">
+                    <h2>The Aurangabad Caves</h2>
+                    <br>
+                    <p>The Aurangabad Caves are a group of ancient Buddhist rock-cut caves located in Aurangabad, Maharashtra, India. 
+                        These caves date back to the 6th and 7th centuries and were carved out of the volcanic rock during the reign of the Kalachuri dynasty. 
+                        There are a total of 12 caves in Aurangabad, comprising both viharas (monastic halls) and chaityas (prayer halls). 
+                        The caves showcase intricate carvings, sculptural reliefs, and beautiful architectural details, depicting various Buddhist motifs and teachings. 
+                        The Aurangabad Caves are significant for their historical and religious importance and provide insights into the art and architecture of ancient India.
+                    </p>
+                </div>
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/west/aurangabad-caves.jpg" alt="AURANGABAD CAVES">
+                </div>
+            </div>
+        </section>
+        <br>
+    </section>
+    <!-- End Example Architecture Section -->
+
+    <!-- Footer -->
+	<section id="footer">
+		<footer>
+			<div class="footer">
+				<div class="footer-text">
+					<p><i class="fa-regular fa-copyright"></i> Made by Harshit Mittal of Class X-D</p>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!-- End Footer -->
+
+    <!-- font awesome code -->
+    <script src="https://kit.fontawesome.com/59181c9d24.js" crossorigin="anonymous"></script>
+
+    <!-- Navbar Dropdown Script -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- End Navbar Dropdown Script -->
+
+    <!-- Smooth Scrolling Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 100, function(){
+
+                window.location.hash = hash;
+                });
+            }
+            });
+        });
+    </script>
+    <!-- End Smooth Scrolling Script -->
+
+    <!-- Vanta js script -->
+    <script src="/js/bootstrap/p5.min.js"></script>
+    <script src="/js/bootstrap/vanta.topology.min.js"></script>
+    <script>
+        VANTA.TOPOLOGY({
+        el: "#region-head",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x7f9017
+        })
+    </script>
+    <!-- End Vanta js script -->
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>East India</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/js/bootstrap/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/east_india_main.jpg">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+        <div class="max-width">
+            <a href="/index.html">Home</a>
+            <a href="/regions/north.html">North India</a>
+            <a href="/regions/south.html">South India</a>
+            <a href="/regions/west.html">West India</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+	<section id="region-head">
+		<h1>East Indian Architecture</h1>
+		<h2>East Indian architecture is characterized by a rich and diverse heritage, reflecting the region's cultural and historical influences.</h2>
+	</section>
+	<!-- Header -->
+
+    <!-- Example Architecture Section -->
+	<section id="region-examples" class="container">
+		<br>
+        <section id="ex1" class="container">
+            <div class="row fixed-width">
+                <div class="col-md mode">
+                    <h2>The Hazarduari Palace</h2>
+                    <br>
+                    <p>The Hazarduari Palace, located in Murshidabad, West Bengal, India, is a magnificent palace built during the 19th century. 
+                        It was commissioned by Nawab Nazim Humayun Jah of Bengal, Bihar, and Orissa and completed in 1837. 
+                        The palace gets its name from its remarkable thousand doors, out of which only 900 are real, while the rest are designed for aesthetic purposes. 
+                        The architectural style of the palace is a fusion of Indo-European motifs, with grand halls, spacious corridors, and intricate artwork. 
+                        Today, the Hazarduari Palace serves as a museum, showcasing a vast collection of artifacts, paintings, and antiques, providing a glimpse into the royal history of the region.
+                    </p>
+                </div>
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/east/hazarduari.jpg" alt="HAZARDUARI">
+                </div>	
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="ex2" class="container">
+            <div class="row fixed-width">
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/east/rajarani-temple.jpg" alt="RAJARANI TEMPLE">
+                </div>
+                <div class="col-md mode">
+                    <h2>The Rajarani Temple</h2>
+                    <br>
+                    <p>The Rajarani Temple is a notable Hindu temple located in Bhubaneswar, Odisha, India. 
+                        Built during the 11th century, it is renowned for its unique architectural style, often referred to as the "love temple" due to its intricate carvings depicting amorous couples and divine beings. 
+                        The temple is dedicated to Lord Shiva and has a distinctive red and gold sandstone composition. 
+                        The outer walls of the temple are adorned with intricate sculptures, showcasing the mastery of Odishan artistry. 
+                        The Rajarani Temple is celebrated for its architectural elegance, serene ambience, and the captivating depiction of human emotions through its exquisite carvings.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="ex3" class="container">
+            <div class="row fixed-width">
+                <div class="col-md mode">
+                    <h2>The Tomb of Sher Shah Suri</h2>
+                    <br>
+                    <p>The Sher Shah Suri Tomb is a historical mausoleum located in Sasaram, Bihar, India. 
+                        It was constructed in the 16th century as the final resting place of Sher Shah Suri, a prominent ruler who established the Sur dynasty in the region. 
+                        The tomb is a fine example of Indo-Islamic architecture, characterized by its octagonal shape and grand proportions. 
+                        It features intricate stone carvings, decorative jaali (lattice) work, and a tall dome. 
+                        The Sher Shah Suri Tomb stands as a testament to the architectural prowess of the Sur dynasty and serves as a significant historical landmark in Bihar.
+                    </p>
+                </div>
+                <div class="item-image">
+                    <img class="res-img img-fluid region-img" src="/img/east/sher-shah-suri-tomb.jpg" alt="SHER SHAH SURI TOMB">
+                </div>
+            </div>
+        </section>
+        <br>
+    </section>
+    <!-- End Example Architecture Section -->
+
+    <!-- Footer -->
+	<section id="footer">
+		<footer>
+			<div class="footer">
+				<div class="footer-text">
+					<p><i class="fa-regular fa-copyright"></i> Made by Harshit Mittal of Class X-D</p>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!-- End Footer -->
+
+    <!-- font awesome code -->
+    <script src="https://kit.fontawesome.com/59181c9d24.js" crossorigin="anonymous"></script>
+
+    <!-- Navbar Dropdown Script -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- End Navbar Dropdown Script -->
+
+    <!-- Smooth Scrolling Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 100, function(){
+
+                window.location.hash = hash;
+                });
+            }
+            });
+        });
+    </script>
+    <!-- End Smooth Scrolling Script -->
+
+    <!-- Vanta js script -->
+    <script src="/js/bootstrap/p5.min.js"></script>
+    <script src="/js/bootstrap/vanta.topology.min.js"></script>
+    <script>
+        VANTA.TOPOLOGY({
+        el: "#region-head",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x7f9017
+        })
+    </script>
+    <!-- End Vanta js script -->
+</body>
+</html>
