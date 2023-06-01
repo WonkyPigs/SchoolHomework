@@ -20,7 +20,7 @@
     <link rel="icon" href="/SchoolHomework/img/west_india_main.jpg">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <!-- Navbar -->
     <div class="topnav" id="myTopnav">
         <div class="max-width">
@@ -174,5 +174,27 @@
         })
     </script>
     <!-- End Vanta js script -->
+
+    <!-- disable dev tools because plagiarism exists -->
+    <script>
+    document.onkeydown = (e) => {
+        if (e.key == 123) {
+            e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+            e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+            e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+            e.preventDefault();
+        }
+        if (e.ctrlKey && e.key == 'U') {
+            e.preventDefault();
+        }
+    };
+    </script>
+    <!-- end anti-plagiarism thing -->
 </body>
 </html>
